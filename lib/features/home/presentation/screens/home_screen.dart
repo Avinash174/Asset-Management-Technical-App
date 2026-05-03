@@ -59,7 +59,7 @@ class HomeScreen extends StatelessWidget {
           decoration: BoxDecoration(
             gradient: LinearGradient(
               colors: [
-                Theme.of(context).primaryColor.withAlpha(50),
+                Theme.of(context).primaryColor.withValues(alpha: 0.2),
                 Theme.of(context).scaffoldBackgroundColor,
               ],
               begin: Alignment.topCenter,
@@ -265,7 +265,7 @@ class HomeScreen extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
                 decoration: BoxDecoration(
-                  color: typeColor.withAlpha(25),
+                  color: typeColor.withValues(alpha: 0.1),
                   borderRadius: BorderRadius.circular(20),
                 ),
                 child: Text(

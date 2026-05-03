@@ -42,7 +42,7 @@ class ProfileScreen extends StatelessWidget {
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
-            AppColors.primary.withAlpha(20),
+            AppColors.primary.withValues(alpha: 0.08),
             Theme.of(context).scaffoldBackgroundColor,
           ],
           begin: Alignment.topCenter,
