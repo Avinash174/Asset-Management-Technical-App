@@ -64,7 +64,7 @@ class _ScannerScreenState extends State<ScannerScreen> {
           children: [
             Container(
               decoration: BoxDecoration(
-                color: Colors.black.withAlpha(100),
+                color: Colors.black.withValues(alpha: 0.39),
                 shape: BoxShape.circle,
               ),
               child: IconButton(
@@ -74,7 +74,7 @@ class _ScannerScreenState extends State<ScannerScreen> {
             ),
             Container(
               decoration: BoxDecoration(
-                color: Colors.black.withAlpha(100),
+                color: Colors.black.withValues(alpha: 0.39),
                 shape: BoxShape.circle,
               ),
               child: IconButton(
@@ -247,16 +247,16 @@ class _AssetDetailsSheet extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: AppColors.primary.withAlpha(10),
+        color: AppColors.primary.withValues(alpha: 0.04),
         borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: AppColors.primary.withAlpha(30)),
+        border: Border.all(color: AppColors.primary.withValues(alpha: 0.12)),
       ),
       child: Row(
         children: [
           Container(
             padding: const EdgeInsets.all(12),
             decoration: BoxDecoration(
-              color: AppColors.primary.withAlpha(30),
+              color: AppColors.primary.withValues(alpha: 0.12),
               borderRadius: BorderRadius.circular(12),
             ),
             child: const Icon(Remix.box_3_line, color: AppColors.primary),
